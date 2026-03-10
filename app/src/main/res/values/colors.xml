@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launcher icon background — deep dark to match the application theme -->
+    <color name="ic_launcher_background">#FF000000</color>
+    <!-- Primary accent — vibrant green consistent with the "Running" status indicator -->
+    <color name="primary_green">#FF32D74B</color>
+    <!-- Error red -->
+    <color name="error_red">#FFFF453A</color>
+    <!-- Background shades -->
+    <color name="background_primary">#FF000000</color>
+    <color name="background_card">#FF1C1C1E</color>
+    <color name="background_card_active">#FF1A3A2A</color>
+    <!-- Text -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FF8E8E93</color>
+</resources>

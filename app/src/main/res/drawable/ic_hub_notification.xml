@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Notification icon for HubForegroundService.
+    Android notification icons must be monochrome (single-layer, white silhouette)
+    to comply with the material notification icon guidelines.
+    This icon depicts a simple network hub / router symbol.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Central hub node -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2C10.34,2 9,3.34 9,5C9,6.3 9.84,7.4 11,7.82L11,10L7,10C5.9,10 5,10.9 5,12L5,14.18C3.84,14.6 3,15.7 3,17C3,18.66 4.34,20 6,20C7.66,20 9,18.66 9,17C9,15.7 8.16,14.6 7,14.18L7,12L17,12L17,14.18C15.84,14.6 15,15.7 15,17C15,18.66 16.34,20 18,20C19.66,20 21,18.66 21,17C21,15.7 20.16,14.6 19,14.18L19,12C19,10.9 18.1,10 17,10L13,10L13,7.82C14.16,7.4 15,6.3 15,5C15,3.34 13.66,2 12,2Z" />
+
+</vector>

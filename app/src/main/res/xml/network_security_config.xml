@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Configuration
+
+    On Android 9 (API 28), cleartext HTTP/FTP traffic is blocked by default.
+    This configuration explicitly permits cleartext traffic to the hotspot gateway
+    subnet (192.168.43.0/24), which is the only network the FTP server operates on.
+
+    This does NOT open cleartext traffic to the internet or any other network —
+    it is scoped exclusively to the local-only hotspot subnet.
+
+    Reference: https://developer.android.com/training/articles/security-config
+-->
+<network-security-config>
+
+    <!-- Permit cleartext FTP traffic to the LocalOnlyHotspot subnet only.
+         The DHCP gateway (192.168.43.1) and all assigned client addresses
+         within the /24 subnet fall within this domain. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.43.1</domain>
+        <!-- Broader subnet coverage for passive mode data connections. -->
+        <domain includeSubdomains="false">192.168.43.0</domain>
+    </domain-config>
+
+    <!-- All other traffic defaults to the platform default, which on API 28
+         disallows cleartext for security compliance. -->
+    <base-config cleartextTrafficPermitted="false" />
+
+</network-security-config>

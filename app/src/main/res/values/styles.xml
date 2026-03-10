@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Application base theme.
+        DayNight.NoActionBar is used as the base to suppress the default toolbar,
+        as the UI is entirely managed by Jetpack Compose with its own header layout.
+        The forced dark appearance is appropriate for an infrastructure/server app
+        that may run for extended periods on an AMOLED display.
+    -->
+    <style name="Theme.AndroidNetworkHub" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Status bar configuration -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+
+        <!-- Force dark mode to protect the AMOLED panel from unnecessary brightness -->
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <!-- Splash screen theme applied before the main activity renders -->
+    <style name="Theme.AndroidNetworkHub.Splash" parent="Theme.AndroidNetworkHub">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+</resources>

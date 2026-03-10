@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Network Hub</string>
+    <string name="app_description">Galaxy S8+ Offline NAS Server</string>
+
+    <!-- Status labels -->
+    <string name="status_idle">Idle — Server Offline</string>
+    <string name="status_hotspot_starting">Starting Hotspot…</string>
+    <string name="status_hotspot_ready">Hotspot Active</string>
+    <string name="status_server_starting">Binding FTP Server…</string>
+    <string name="status_running">Running</string>
+    <string name="status_error">Error</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Network Hub</string>
+    <string name="notification_text_idle">Tap to open the app</string>
+    <string name="notification_action_stop">Stop</string>
+
+    <!-- Credentials display -->
+    <string name="label_ssid">Network Name (SSID)</string>
+    <string name="label_password">WPA2 Password</string>
+    <string name="label_ftp_url">FTP Server Address</string>
+    <string name="label_scan_qr">Scan to Connect</string>
+
+    <!-- Buttons -->
+    <string name="btn_start">Start Network Hub</string>
+    <string name="btn_stop">Stop Network Hub</string>
+    <string name="btn_grant_sd_card">Grant SD Card Access</string>
+    <string name="btn_sd_card_granted">SD Card: Granted ✓</string>
+
+    <!-- Permissions -->
+    <string name="permission_location_rationale">
+        Location permission is required by Android 9 to activate the local hotspot.
+        This permission is used only for hotspot creation and is not used to track your location.
+    </string>
+
+    <!-- Errors -->
+    <string name="error_wificonfig_null">Failed to retrieve hotspot credentials from the system.</string>
+    <string name="error_no_storage_root">No SD card access has been granted. Please use the Grant SD Card Access button first.</string>
+</resources>
