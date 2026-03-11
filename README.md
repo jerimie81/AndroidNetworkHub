@@ -38,6 +38,13 @@ Dependency injection is provided by **Hilt**. All long-running operations execut
 git clone <repo-url>
 cd AndroidNetworkHub
 
+# Use JDK 17 for Gradle/AGP
+export JAVA_HOME=/path/to/jdk-17
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# Point to your Android SDK (or create local.properties manually)
+export ANDROID_HOME=$HOME/Android/Sdk
+
 # Build a debug APK
 ./gradlew assembleDebug
 
